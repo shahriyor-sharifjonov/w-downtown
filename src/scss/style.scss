@@ -3,14 +3,16 @@
 // Шрифты
 // @import "fonts";
 
+@import '../../node_modules/locomotive-scroll/dist/locomotive-scroll.css';
+
 // abstracts
 @import 
     'abstracts/variables',
     'abstracts/functions',
-    'abstracts/mixins',
+    'abstracts/mixins', 
     'abstracts/placeholders';
 
-// vendors
+// vendors 
 // @import 'vendors/bootstrap'
 
 // base
@@ -25,6 +27,8 @@
     'layout/header',
     'layout/footer',
     'layout/sidebar',
+    'layout/about',
+    'layout/amenities',
     'layout/forms';
 
 // components

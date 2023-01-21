@@ -7,52 +7,11 @@ html(lang="en")
         link(rel="stylesheet", href="css/style.min.css")
         link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet")
         title Document
-    body 
-        .wrapper 
-            include components/header 
-            //- +header 
-            .vh100 
-            .about 
-                .about__canvas 
-                .about__wrap 
-                    .about__el-1.about__el 
-                        h2.about__el-title UNMISSABLE
-                        p.about__el-p Step in a world of rebel luxury, iconic design, sophisticated materials, tactile pleasure. The experience begins in the W Lounge, where a sophisticated and stylish atmosphere awakens your senses.  
-                    .about__el-2.about__el 
-                        h2.about__el-title UPSCALE
-                        p.about__el-p Enter one of the exclusive 384 residences and start feeling at home from the very first moment. Floor to ceiling glass facades and staggered balconies allow plenty of sunlight in every room, while accent wallpapers underline their vibrant personality
-            .vh100  
-            p#go   
-            //- .amenities#amenities 
-            //-     .amenities__content 
-            //-         .amenities__rect 
-            //-         .amenities__scroll  
-            //-             span#lengthAmenity 03
-            //-             .amenities__scroll-track 
-            //-                 .amenities__scroll-thumb 
-            //-             span#currentAmenity 01
-            //-         .amenities__images 
-            //-             .amenities__img.active 
-            //-                 img(src="@img/amenities-1.png", alt="" draggable="false")
-            //-             .amenities__img
-            //-                 img(src="@img/amenities-2.png", alt="" draggable="false")
-            //-             .amenities__img
-            //-                 img(src="@img/amenities-3.png", alt="" draggable="false")
-            //-     .amenities__wrap
-            //-         .amenities__first
-            //-         .amenities__section 
-            //-             h2.amenities__section-title Amenities 
-            //-             .amenities__section-tag BURJ KHALIFA
-            //-             p.amenities__section-p Impressive views, along with the Dubai Mall and the Dancing Fountains, are just a few minutes away.
-            //-         .amenities__section 
-            //-             h2.amenities__section-title Amenities 
-            //-             .amenities__section-tag Fitness centre
-            //-             p.amenities__section-p Advanced fitness centre with professional trainers and a variety of programs.
-            //-         .amenities__section 
-            //-             h2.amenities__section-title Amenities 
-            //-             .amenities__section-tag VIP lounge 
-            //-             p.amenities__section-p A VIP lounge where new connections spark over a signature cocktail or a gourmet lunch.
-            //-         .amenities__last
-            include components/footer 
-            //- +footer
+    body
+        .wrapper
+            include components/amenities 
+            +amenities 
+            include components/about 
+            +about 
+            .vh100
         script(src="js/app.min.js") 
