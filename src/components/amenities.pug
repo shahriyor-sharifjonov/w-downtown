@@ -1,10 +1,35 @@
 mixin amenities() 
     section.amenities#amenities 
         .amenities__overlay 
+        .amenities__white 
         .amenities__content 
-            .amenities__rect 
+            .amenities__black 
+            .amenities__pagination 
+                span 03  
+                .amenities__pagination-hr 
+                    .amenities__pagination-thumb 
+                span 01 
+            .amenities__gallery 
+                .amenities__gallery-slide.active 
+                    .amenities__gallery-inner(style="background-image: url(./img/amenities-1.png)")
+                .amenities__gallery-slide 
+                    .amenities__gallery-inner(style="background-image: url(./img/amenities-2.png)")
+                .amenities__gallery-slide  
+                    .amenities__gallery-inner(style="background-image: url(./img/amenities-3.png)")
         .amenities__swiper.swiper 
             .amenities__wrapper.swiper-wrapper 
+                .amenities__slide.swiper-slide 
+                    .amenities__slide-wrap 
+                        h2.amenities__slide-title Amenities
+                        span.amenities__slide-tag Burj khalifa
+                        p.amenities__slide-p Impressive views, along with the Dubai Mall and the Dancing Fountains, are just a few minutes away.
                 .amenities__slide.swiper-slide
+                    .amenities__slide-wrap 
+                        h2.amenities__slide-title Amenities
+                        span.amenities__slide-tag Fitness centre
+                        p.amenities__slide-p Advanced fitness centre with professional trainers and a variety of programs.
                 .amenities__slide.swiper-slide
-                .amenities__slide.swiper-slide
+                    .amenities__slide-wrap 
+                        h2.amenities__slide-title Amenities
+                        span.amenities__slide-tag VIP lounge 
+                        p.amenities__slide-p A VIP lounge where new connections spark over a signature cocktail or a gourmet lunch.

@@ -1,9 +1,9 @@
 // Главный Sass файл
 
 // Шрифты
-// @import "fonts";
+@import "fonts";
 
-@import '../../node_modules/locomotive-scroll/dist/locomotive-scroll.css';
+@import '../../node_modules/swiper/swiper.scss';
 
 // abstracts
 @import 
