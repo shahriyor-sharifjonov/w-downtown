@@ -5,6 +5,9 @@ import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin.js";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export function init() {
+    gsap.set(".about__canvas", {
+        x: 100,
+    })
     gsap.utils.toArray(".about").forEach(el => {
         const tl = gsap.timeline({
             scrollTrigger: {

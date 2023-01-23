@@ -48,6 +48,7 @@
     "fullpage.js": "^4.0.15",
     "gsap": "^3.11.4",
     "locomotive-scroll": "^4.1.4",
-    "smoothscroll-for-websites": "^1.4.10"
+    "smoothscroll-for-websites": "^1.4.10",
+    "swiped-events": "^1.1.7"
   }
 }

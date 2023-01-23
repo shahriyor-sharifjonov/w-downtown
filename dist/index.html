@@ -4,52 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230123095546">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap&_v=20230123095546" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230123135425">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap&_v=20230123135425" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
+      <div class="vh100"></div>
             <section class="amenities" id="amenities"> 
-              <div class="amenities__overlay"> </div>
-              <div class="amenities__white"> </div>
-              <div class="amenities__content"> 
-                <div class="amenities__black"> </div>
-                <div class="amenities__pagination"> <span>03  </span>
-                  <div class="amenities__pagination-hr"> 
-                    <div class="amenities__pagination-thumb"> </div>
-                  </div><span>01 </span>
-                </div>
-                <div class="amenities__gallery"> 
-                  <div class="amenities__gallery-slide active"> 
-                    <div class="amenities__gallery-inner" style="background-image: url(./img/amenities-1.png)"></div>
+              <div class="amenities__container"> 
+                <div class="amenities__overlay"> </div>
+                <div class="amenities__white"> </div>
+                <div class="amenities__content"> 
+                  <div class="amenities__black"> </div>
+                  <div class="amenities__pagination"> <span>03  </span>
+                    <div class="amenities__pagination-hr"> 
+                      <div class="amenities__pagination-thumb"> </div>
+                    </div><span>01  </span>
                   </div>
-                  <div class="amenities__gallery-slide"> 
-                    <div class="amenities__gallery-inner" style="background-image: url(./img/amenities-2.png)"></div>
-                  </div>
-                  <div class="amenities__gallery-slide"> 
-                    <div class="amenities__gallery-inner" style="background-image: url(./img/amenities-3.png)"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="amenities__swiper swiper"> 
-                <div class="amenities__wrapper swiper-wrapper"> 
-                  <div class="amenities__slide swiper-slide"> 
-                    <div class="amenities__slide-wrap"> 
-                      <h2 class="amenities__slide-title">Amenities</h2><span class="amenities__slide-tag">Burj khalifa</span>
-                      <p class="amenities__slide-p">Impressive views, along with the Dubai Mall and the Dancing Fountains, are just a few minutes away.</p>
+                  <div class="amenities__gallery"> 
+                    <div class="amenities__gallery-slide active" id="gal-1"> 
+                      <div class="amenities__gallery-inner" style="background-image: url(./img/amenities-1.png)"></div>
+                    </div>
+                    <div class="amenities__gallery-slide" id="gal-2"> 
+                      <div class="amenities__gallery-inner" style="background-image: url(./img/amenities-2.png)"></div>
+                    </div>
+                    <div class="amenities__gallery-slide" id="gal-3"> 
+                      <div class="amenities__gallery-inner" style="background-image: url(./img/amenities-3.png)"></div>
                     </div>
                   </div>
-                  <div class="amenities__slide swiper-slide">
-                    <div class="amenities__slide-wrap"> 
-                      <h2 class="amenities__slide-title">Amenities</h2><span class="amenities__slide-tag">Fitness centre</span>
-                      <p class="amenities__slide-p">Advanced fitness centre with professional trainers and a variety of programs.</p>
+                </div>
+                <div class="amenities__swiper swiper"> 
+                  <div class="amenities__wrapper swiper-wrapper"> 
+                    <div class="amenities__slide swiper-slide" data-gallery="#gal-1"> 
+                      <div class="amenities__slide-wrap"> 
+                        <h2 class="amenities__slide-title">Amenities</h2><span class="amenities__slide-tag">Burj khalifa</span>
+                        <p class="amenities__slide-p">Impressive views, along with the Dubai Mall and the Dancing Fountains, are just a few minutes away.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="amenities__slide swiper-slide">
-                    <div class="amenities__slide-wrap"> 
-                      <h2 class="amenities__slide-title">Amenities</h2><span class="amenities__slide-tag">VIP lounge </span>
-                      <p class="amenities__slide-p">A VIP lounge where new connections spark over a signature cocktail or a gourmet lunch.</p>
+                    <div class="amenities__slide swiper-slide" data-gallery="#gal-2">
+                      <div class="amenities__slide-wrap"> 
+                        <h2 class="amenities__slide-title">Amenities</h2><span class="amenities__slide-tag">Fitness centre</span>
+                        <p class="amenities__slide-p">Advanced fitness centre with professional trainers and a variety of programs.</p>
+                      </div>
+                    </div>
+                    <div class="amenities__slide swiper-slide" data-gallery="#gal-3">
+                      <div class="amenities__slide-wrap"> 
+                        <h2 class="amenities__slide-title">Amenities</h2><span class="amenities__slide-tag">VIP lounge </span>
+                        <p class="amenities__slide-p">A VIP lounge where new connections spark over a signature cocktail or a gourmet lunch.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -70,6 +73,6 @@
             </div>
       <div class="vh100"></div>
     </div>
-    <script src="js/app.min.js?_v=20230123095546"> </script>
+    <script src="js/app.min.js?_v=20230123135425"> </script>
   </body>
 </html>
