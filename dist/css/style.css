@@ -456,7 +456,7 @@
 }
 
 .amenities {
-  height: 300vh;
+  height: 250vh;
   background: transparent;
   position: relative;
   display: -webkit-box;
@@ -529,6 +529,10 @@
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.amenities__gallery-slide.prev {
+  z-index: 1;
 }
 
 .amenities__gallery-slide.active {

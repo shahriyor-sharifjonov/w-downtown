@@ -1,5 +1,5 @@
 .amenities{
-    height: 300vh;
+    height: 250vh;
     background: transparent;
     position: relative;
     display: flex;
@@ -54,6 +54,9 @@
             height: 100%;
             top: 0;
             left: 0;
+            &.prev{
+                z-index: 1;
+            }
             &.active{
                 z-index: 2;
             }
