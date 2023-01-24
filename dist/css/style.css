@@ -611,6 +611,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: calc(60% + 72px);
+  will-change: transform;
 }
 
 .amenities__slide-wrap {
@@ -625,6 +626,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 400px;
+  will-change: transform;
 }
 
 .amenities__slide-title {
@@ -740,5 +742,11 @@ button {
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about__wrap {
+    display: none;
   }
 }

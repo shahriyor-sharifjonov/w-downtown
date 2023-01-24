@@ -112,11 +112,13 @@
         flex-direction: column;
         justify-content: center;  
         padding-left: calc(60% + 72px); 
+        will-change: transform;
         &-wrap{
             display: flex;
             flex-direction: column;
             justify-content: center; 
             max-width: 400px;
+            will-change: transform;
         }
         &-title{
             font-family: 'Gilroy';
