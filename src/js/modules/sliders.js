@@ -10,7 +10,7 @@ function isScrolledIntoView(el) {
 }
 
 export function init() {
-    const duration = 1000;
+    const duration = 600;
     const durationS = duration / 1000;
     const amenitiesSwiper = new Swiper('.amenities__swiper', {
         modules: [Mousewheel],
@@ -18,7 +18,7 @@ export function init() {
         allowTouchMove: false,
         mousewheel: {
             forceToAxis: false,
-            sensitivity: 1,
+            sensitivity: 5,
             releaseOnEdges: true,
         },
         watchSlidesProgress: true,
