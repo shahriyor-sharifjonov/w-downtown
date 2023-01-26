@@ -9,7 +9,7 @@ mixin amenities()
                     span 03  
                     .amenities__pagination-hr 
                         .amenities__pagination-thumb 
-                    span 01  
+                    span#activeSlide 01  
                 .amenities__gallery 
                     .amenities__gallery-slide.active#gal-1 
                         .amenities__gallery-inner(style="background-image: url(./img/amenities-1.png)")
@@ -21,8 +21,8 @@ mixin amenities()
                 .amenities__wrapper.swiper-wrapper 
                     .amenities__slide.swiper-slide(data-gallery="#gal-1") 
                         .amenities__slide-wrap 
-                            h2.amenities__slide-title Amenities
-                            span.amenities__slide-tag Burj khalifa
+                            h2.amenities__slide-title Amenities 
+                            span.amenities__slide-tag Burj khalifa 
                             p.amenities__slide-p Impressive views, along with the Dubai Mall and the Dancing Fountains, are just a few minutes away.
                     .amenities__slide.swiper-slide(data-gallery="#gal-2")
                         .amenities__slide-wrap 

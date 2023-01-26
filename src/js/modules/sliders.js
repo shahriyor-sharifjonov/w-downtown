@@ -10,7 +10,7 @@ function isScrolledIntoView(el) {
 }
 
 export function init() {
-    const duration = 600;
+    const duration = 1000;
     const durationS = duration / 1000;
     const amenitiesSwiper = new Swiper('.amenities__swiper', {
         modules: [Mousewheel],
@@ -32,6 +32,9 @@ export function init() {
         }
     })
     amenitiesSwiper.on('slideChange', function(swiper) {
+        console.log(swiper.activeIndex+1);
+        const activeTxt = document.querySelector('#activeSlide');
+        activeTxt.innerHTML = `0${swiper.activeIndex+1}`
         const galleries = document.querySelectorAll('.amenities__gallery-slide');
         const active = swiper.slides[swiper.activeIndex];
         const target = active.getAttribute('data-gallery');
@@ -42,7 +45,9 @@ export function init() {
                 el.classList.add('prev')
                 el.classList.remove('active');
                 gsap.to(el, {
-                    xPercent: 20
+                    xPercent: 20,
+                    backgroundPosition: "50% 100%",
+                    duration: durationS,
                 })
             }
         })
@@ -55,11 +60,27 @@ export function init() {
             duration: durationS
         })
         gsap.fromTo(element.querySelector('.amenities__gallery-inner'), {
-            xPercent: 20,
-            duration: durationS
+            backgroundPosition: "-50% 100%",
+            backgroundSize: "120% 100%",
+            duration: durationS,
         }, {
-            xPercent: 0,
-            duration: durationS
+            backgroundPosition: "100% 100%",
+            backgroundSize: "100% 100%",
+            duration: durationS,
+        })
+        const tl = gsap.timeline()
+        tl.to('.amenities__pagination-thumb', {
+            height: "100%",
+            duration: durationS / 2,
+        })
+        tl.to('.amenities__pagination-thumb', {
+            yPercent: -100,
+            duration: durationS / 2,
+        })
+        tl.to('.amenities__pagination-thumb', {
+            yPercent: 0,
+            height: 0,
+            duration: 0,
         })
     })
 } 

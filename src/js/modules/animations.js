@@ -23,4 +23,18 @@ export function init() {
                 x: 100,
             }, {x: -200}, 'start')
     })
+    // gsap.utils.toArray(".amenities").forEach(el => {
+    //     const tl = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: el,
+    //             start: "top top",
+    //             end: "bottom bottom",
+    //             markers: false,
+    //             scrub: true,
+    //         }
+    //     })
+        // tl.fromTo(".amenities", {
+        //     x: 100,
+        // })
+    // })
 }
