@@ -1,1 +1,61 @@
-// Шапка
+.header{
+    @include absolute(0, 0, 100%, 80px);
+    @include flex(center, center);
+    z-index: z('header');
+    &__nav{
+        @include flex(center, center);
+        width: 100%;
+    }
+    &__inner{
+        @include flex(stretch, space-between);
+        height: 80px; 
+    }
+    &__left{
+        @include flex(center, flex-end);
+        gap: 64px;
+    }
+    &__button{ 
+        @include flex(center, center);
+        color: color('header-color');
+        gap: 16px;
+        &-rect{
+            @include flex(stretch, space-between);
+            @include size(56px, 10px);
+            flex-direction: column;
+        }
+        &-line{
+            @include size(100%, 2px);
+            background: color('header-color');
+        }
+        &-p{
+            @include font(400, 16px, 20px);
+            text-transform: uppercase;
+        }
+    }
+    &__link{
+        height: 42px;
+    }
+    &__right{
+        @include flex(center, flex-end);
+    }
+    &__tel{
+        @include flex(center, flex-end);
+        gap: 16px;
+        &-el{
+            @include rect(40px);
+            @include border(color('header-color'));
+            @include flex(center, center);
+            border-radius: 50%;
+            div{
+                @include rect(28px);
+                @include border(color('header-color'));
+                border-radius: 50%;
+            }
+        }
+        &-p{
+            @include font(400, 16px, 20px);
+            color: color('header-color');
+            text-transform: uppercase;
+        }
+    }
+}

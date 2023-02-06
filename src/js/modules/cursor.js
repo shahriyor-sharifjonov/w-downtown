@@ -58,6 +58,13 @@ export function init() {
         clicked = true;
         startY = e.clientY || e.touches[0].clientY || e.targetTouches[0].clientY;
     }
+
+    function mousehover(e) {
+        gsap.to(cursor, {scale: 3});
+        gsap.to(cursorF, {scale: .3});
+        clicked = true;
+        startY = e.clientY || e.touches[0].clientY || e.targetTouches[0].clientY;
+    }
       
     function mouseup(e) {
         gsap.to(cursor, {scale: 1});
@@ -70,25 +77,25 @@ export function init() {
         }
     }
     document.querySelectorAll('.btn:not(disabled)').forEach(el => {
-        el.addEventListener('mouseover', mousedown)
+        el.addEventListener('mouseover', mousehover)
         el.addEventListener('mouseleave', mouseup)
     });
     document.querySelectorAll('.hover').forEach(el => {
-        el.addEventListener('mouseover', mousedown)
+        el.addEventListener('mouseover', mousehover)
         el.addEventListener('mouseleave', mouseup)
     });
     window.onload = function() {
         document.querySelectorAll('.swiper-pagination-bullet').forEach(el => {
-            el.addEventListener('mouseover', mousedown)
+            el.addEventListener('mouseover', mousehover)
             el.addEventListener('mouseleave', mouseup)
         });
     }
     document.querySelectorAll('.floor__tab-item').forEach(el => {
-        el.addEventListener('mouseover', mousedown)
+        el.addEventListener('mouseover', mousehover)
         el.addEventListener('mouseleave', mouseup)
     });
     document.querySelectorAll('.gotoblock').forEach(el => {
-        el.addEventListener('mouseover', mousedown)
+        el.addEventListener('mouseover', mousehover)
         el.addEventListener('mouseleave', mouseup)
     });
     window.addEventListener('mousedown', mousedown, false);

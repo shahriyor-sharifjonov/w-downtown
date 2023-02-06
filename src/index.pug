@@ -9,7 +9,10 @@ html(lang="en")
     body
         .fixed 
         .wrapper
-            .vh100
+            include components/header  
+            +header 
+            include components/intro  
+            +intro 
             include components/amenities 
             +amenities 
             include components/about 

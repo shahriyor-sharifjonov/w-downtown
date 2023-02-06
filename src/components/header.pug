@@ -1,3 +1,16 @@
 mixin header()
     header.header 
-        p header2
+        nav.header__nav 
+            .header__inner.container 
+                .header__left 
+                    button(type="button").header__button.hover 
+                        .header__button-rect 
+                            .header__button-line.header__button-line_top 
+                            .header__button-line.header__button-line_bot 
+                        span.header__button-p menu  
+                    a(href="#brochure").header__link.transparent-button.hover brochure 
+                .header__right 
+                    button(type="button").header__tel.hover 
+                        .header__tel-el 
+                            div 
+                        span.header__tel-p show number 

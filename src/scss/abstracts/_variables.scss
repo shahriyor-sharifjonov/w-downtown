@@ -1,5 +1,3 @@
-// Sass переменные
-
 $z-indexes: (
     'header': 50,
     'menu': 100,
@@ -7,12 +5,26 @@ $z-indexes: (
     'dropdown': 40,
     'default': 1,
     'below': -1,
+    'cursor-wrap': 1000
+);
+
+$colors: (
+    'primary-color': #ffffff,
+    'header-color': #ffffff,
 );
 
 @function z($layer) {
     @if not map-has-key($z-indexes, $layer) {
-        @error 'Нет слоя с именем `#{$layer}` в $z-indexes.'
+        @error 'Нет слоя c именем `#{$layer}` в $z-indexes.'
             + 'Слой должен быть одним из #{map-keys($z-indexes)}.';
     }
     @return map-get($z-indexes, $layer);
+}
+
+@function color($color) {
+    @if not map-has-key($colors, $color) {
+        @error 'Нет цвета c именем `#{$color}` в $colors.'
+            + 'Цвет должен быть одним из #{map-keys($colors)}.';
+    }
+    @return map-get($colors, $color);
 }

@@ -1,1 +1,9 @@
-//Кнопки
+.transparent-button{
+    @include flex(center, center);
+    @include border(#fff);
+    @include font(400, 14px, 115%);
+    color: color('primary-color');
+    text-transform: uppercase;
+    border-radius: 70px;
+    padding: 18px 30px;
+}
