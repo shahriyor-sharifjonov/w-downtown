@@ -11,6 +11,7 @@ $z-indexes: (
 $colors: (
     'primary-color': #ffffff,
     'header-color': #ffffff,
+    'header-menu-background': #000000,
 );
 
 @function z($layer) {
@@ -18,7 +19,7 @@ $colors: (
         @error 'Нет слоя c именем `#{$layer}` в $z-indexes.'
             + 'Слой должен быть одним из #{map-keys($z-indexes)}.';
     }
-    @return map-get($z-indexes, $layer);
+    @return map-get($z-indexes, $layer); 
 }
 
 @function color($color) {

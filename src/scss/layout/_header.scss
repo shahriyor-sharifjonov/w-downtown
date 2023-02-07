@@ -4,6 +4,7 @@
     z-index: z('header');
     &__nav{
         @include flex(center, center);
+        z-index: z('default');
         width: 100%;
     }
     &__inner{
@@ -56,6 +57,33 @@
             @include font(400, 16px, 20px);
             color: color('header-color');
             text-transform: uppercase;
+        }
+    }
+    &__menu{
+        @include absolute(0, 0, 100%, 100vh);
+        background: color('header-menu-background');
+        opacity: 0;
+        padding-top: 80px;
+        &-list{
+            padding: 0 25px;
+            @include flex(flex-start, flex-start);
+            flex-direction: column;
+            gap: 24px;
+            padding-top: 100px;
+        }
+        &-li{
+            overflow: hidden;
+        }
+        &-link{
+            display: block;
+            @include font(400, 32px, 37px);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: color('header-color');
+            transition: color 600ms ease;
+            &:hover{
+                color: #E1A346;
+            }
         }
     }
 }
