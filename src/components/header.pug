@@ -10,16 +10,74 @@ mixin header()
                         span.header__button-p menu  
                     a(href="#brochure").header__link.transparent-button.hover brochure 
                 .header__right 
-                    button(type="button").header__tel.hover 
+                    a(href="tel:+998977777777").header__tel.hover.tel-animation 
+                        .header__tel-scroll 
+                            span.header__tel-p.tel-anim show number 
+                            span.header__tel-p.tel-anim +998 97 777 77 77
+                    button(type="button").header__tel.hover.call-animation 
                         .header__tel-el 
                             div 
-                        span.header__tel-p show number 
+                        .header__tel-scroll 
+                            span.header__tel-p.call-anim ORDER A CALLBACK
+                            span.header__tel-p.call-anim ORDER A CALLBACK
         .header__menu 
+            .header__menu-rect 
             .header__menu-left 
                 ul.header__menu-list.container 
                     li.header__menu-li 
-                        a(href="#amenities").header__menu-link.hover Amenities 
+                        a(href="#amenities" data-scroll="1").header__menu-link.hover AMENITIES
                     li.header__menu-li 
-                        a(href="#amenities").header__menu-link.hover Amenities 
+                        a(href="#location" data-scroll="2").header__menu-link.hover LOCATION
                     li.header__menu-li 
-                        a(href="#amenities").header__menu-link.hover Amenities 
+                        a(href="#brochure" data-scroll="3").header__menu-link.hover BROCHURE
+                    li.header__menu-li 
+                        a(href="#exterior" data-scroll="4").header__menu-link.hover EXTERIOR
+                    li.header__menu-li 
+                        a(href="#interior" data-scroll="5").header__menu-link.hover INTERIOR
+                    li.header__menu-li 
+                        a(href="#gallery" data-scroll="6").header__menu-link.hover GALLERY
+                    li.header__menu-li 
+                        a(href="#floorplans" data-scroll="7").header__menu-link.hover FLOOR PLANS
+                    li.header__menu-li 
+                        a(href="#contact" data-scroll="8").header__menu-link.hover CONTACT US
+            .header__menu-right 
+                .header__menu-images
+                    .header__menu-images-wrap.noopp 
+                        .header__menu-images-item 
+                            img(src="@img/header-img-5.png", alt="" draggable="false")
+                        .header__menu-images-item 
+                            img(src="@img/header-img-6.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-1.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-2.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-3.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-4.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-5.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-6.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-1.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-2.png", alt="" draggable="false")
+                .header__menu-images.opp-con 
+                    .header__menu-images-wrap.opp  
+                        .header__menu-images-item
+                            img(src="@img/header-img-2.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-1.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-6.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-5.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-4.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-3.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-2.png", alt="" draggable="false")
+                        .header__menu-images-item
+                            img(src="@img/header-img-1.png", alt="" draggable="false")
