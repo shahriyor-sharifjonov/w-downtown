@@ -6,4 +6,8 @@
     text-transform: uppercase;
     border-radius: 70px;
     padding: 18px 30px;
+    gap: 10px;
+    &_orange{
+        @include border(#E1A346);
+    }
 }

@@ -90,6 +90,7 @@
         @include absolute(0, 0, 100%, 100vh);
         background: color('header-menu-background');
         opacity: 0;
+        visibility: hidden;
         padding-top: 80px;
         will-change: opacity;
         isolation: isolate;
@@ -123,6 +124,7 @@
         }
         &-link{
             display: block;
+            font-family: 'Gilroy', 'Montserrat', sans-serif;
             @include font(400, 32px, 37px);
             letter-spacing: 0.05em;
             color: color('header-color');
@@ -144,6 +146,9 @@
             gap: 32px;
             @include media(1700){
                 width: calc(100% - 600px);
+            }
+            @include media(1200){
+                width: calc(100% - 500px);
             }
             @include media(992){
                 display: none;

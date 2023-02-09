@@ -1,0 +1,24 @@
+mixin callback()
+    .callback#callback 
+        .callback__content 
+            .callback__close 
+                .callback__close-rect 
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.721436" y="30.3643" width="42.1494" height="1.94819" transform="rotate(-45 0.721436 30.3643)" fill="black"/>
+                        <rect x="1.47437" y="0.257812" width="42.1494" height="1.94819" transform="rotate(45 1.47437 0.257812)" fill="black"/>
+                    </svg>
+            form(action="#").callback__form
+                p.callback__title ORDER A CALLBACK 
+                .callback__form-input 
+                    input(type="text" placeholder="YOUR NAME")
+                .callback__form-input 
+                    input(type="text" placeholder="PHONE NUMBER")
+                p.callback__p BY CLICKING ON THE "SUBMIT A REQUEST" BUTTON, YOU ACCEPT <a href="#">THE TERMS</a> OF PERSONAL DATA PROCESSING
+                button(type="submit").callback__button.transparent-button.transparent-button_orange.hover Submit a request 
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.7625 20.2377L21 16.0002L16.7625 11.7627" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 16H21" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+        .callback__video 
+            video(src="../files/videos/callback-video.mp4" muted autoplay loop) 

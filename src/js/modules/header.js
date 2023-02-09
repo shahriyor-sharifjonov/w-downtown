@@ -18,6 +18,10 @@ export function init() {
     const ease1 = "ease.inOut";
     const ease2 = "circ.out";
 
+    // gsap.set('.header__menu', {
+
+    // })
+
     const telChar = new SplitText(".tel-anim", { type: "words,chars" })
     const telChars = telChar.chars;
 
@@ -79,7 +83,8 @@ export function init() {
         }, 'continue')
         .to('.header__menu', {
             opacity: 1,
-            ease: ease1
+            ease: ease1,
+            visibility: 'visible'
         }, 'continue')
         .add('rect')
         .to('.header__menu-rect', {
