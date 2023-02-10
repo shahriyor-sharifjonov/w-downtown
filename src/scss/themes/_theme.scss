@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: var(--first-font);
+    font-family: var(--third-font);
     // cursor: none;
     &::selection{
         background: #e1a346;
@@ -26,6 +26,7 @@ body{
 }
 body{
     background: #000;
+    overscroll-behavior: none;  
 }
 a{
     text-decoration: none;

@@ -1,0 +1,63 @@
+.intro{
+    background: #fff;
+    &__body{
+        position: relative;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    &__canvas{
+        width: 600px;
+        .csc{
+            height: 100vh !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        canvas{
+            height: 500px !important;
+        }
+    }
+    &__content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    &__inner{
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    &__p{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 16px;
+        text-shadow: 0 0 15px #fff; 
+    }
+    &__title{
+        font-weight: 400;
+        font-size: 112px;
+        line-height: 140px;
+        text-align: center;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        text-shadow: 0 0 15px #fff; 
+    }
+    &__desc{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 16px;
+        text-shadow: 0 0 5px #fff; 
+    }
+}
