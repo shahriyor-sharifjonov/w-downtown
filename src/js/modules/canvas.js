@@ -12,10 +12,15 @@ export function init() {
     }else {
         if(document.querySelector('.intro__canvas')){
             new CanvasScrollClip(document.querySelector('.intro__canvas'), {
-                framePath: "img/about-desktop-2/sangbleu-e8943c2e-001.jpg",
+                framePath: "img/intro-desktop-2/sangbleu-e8943c2e-001.jpg",
                 frameCount: 76,
                 scrollArea: window.innerHeight * 2
             })
+            // new CanvasScrollClip(document.querySelector('.intro__canvas'), {
+            //     framePath: "img/intro-desktop-3/newparis-a101463c-001.jpg",
+            //     frameCount: 76, 
+            //     scrollArea: window.innerHeight * 2
+            // })
         }
         if(document.querySelector('.about__canvas')){
             new CanvasScrollClip(document.querySelector('.about__canvas'), {

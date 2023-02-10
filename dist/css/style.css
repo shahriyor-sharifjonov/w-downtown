@@ -1130,7 +1130,7 @@
 }
 
 .intro__canvas {
-  width: 600px;
+  width: 800px;
 }
 
 .intro__canvas .csc {
@@ -1147,7 +1147,7 @@
 }
 
 .intro__canvas canvas {
-  height: 500px !important;
+  height: 600px !important;
 }
 
 .intro__content {
@@ -1182,7 +1182,6 @@
   line-height: 30px;
   text-align: center;
   margin-bottom: 16px;
-  text-shadow: 0 0 15px #fff;
 }
 
 .intro__title {
@@ -1193,7 +1192,6 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   margin-bottom: 32px;
-  text-shadow: 0 0 15px #fff;
 }
 
 .transparent-button {
