@@ -109,7 +109,7 @@
         gap: 12px;
         span{
             display: block;
-            font-family: 'Gilroy';
+            font-family: var(--second-font);
             font-size: 21px;
             line-height: 25px;
             text-align: center;
@@ -151,7 +151,7 @@
             will-change: transform;
         }
         &-title{
-            font-family: 'Gilroy';
+            font-family: var(--second-font);
             font-style: normal;
             font-weight: 700;
             font-size: 48px;
@@ -164,7 +164,7 @@
         &-tag{
             padding: 10px 15px; 
             background: #E1A346;
-            font-family: 'Gilroy';
+            font-family: var(--second-font);
             font-size: 21px;
             line-height: 25px;
             text-align: center;
@@ -175,7 +175,7 @@
             margin-bottom: 24px;
         }
         &-p{
-            font-family: 'Gilroy';
+            font-family: var(--second-font);
             font-size: 21px;
             line-height: 25px;
             color: #000000;

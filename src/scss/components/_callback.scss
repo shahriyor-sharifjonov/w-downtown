@@ -15,15 +15,99 @@
         justify-content: center;
         align-items: center;
         padding: 70px;
+        position: relative;
+        isolation: isolate;
+        z-index: 1;
+        background: #000;
+        &-bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 372px;
+            z-index: -1;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__form{
+        max-width: 393px;
+        &-input{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            &+.callback__form-input{
+                margin-top: 36px;
+            }
+            input{
+                font-family: var(--third-font);
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 35px;
+                color: #FFFFFF;
+                background: none;
+                padding-bottom: 8px;
+                border: none;
+                &::placeholder{
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 35px;
+                    color: #FFFFFF;
+                }
+            }
+        }
     }
     &__title{
-        font-family: 'Jost';
+        font-family: var(--third-font);
         font-style: normal;
         font-weight: 400;
         font-size: 64px;
         line-height: 92px;
         text-transform: uppercase;
         color: #FFFFFF;
+        margin-bottom: 100px;
+    }
+    &__close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include rect(96px);
+        @include flex(center, center);
+        background: #fff;
+        &:hover{
+            .callback__close-svg{
+                transform: scale(0.9) rotate(-90deg); 
+            }
+            .callback__close-rect{
+                transform: translateY(-100%);
+            }
+        }
+        &-rect{
+            position: absolute; 
+            top: 0;
+            left: 0;
+            transition: 600ms ease-in-out;
+            @include rect(100%);
+            z-index: 1;
+            background: #E1A346;
+        }
+        &-svg{
+            position: relative;
+            z-index: 2;
+            transition: 600ms ease-in-out;
+        }
+    }
+    &__p{
+        font-family: var(--third-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.35);
+        margin-bottom: 32px;
+        margin-top: 36px;
+        a{
+            color: #FFFFFF;
+        }
     }
     &__video{
         width: 55%;

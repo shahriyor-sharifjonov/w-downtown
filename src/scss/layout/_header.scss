@@ -124,7 +124,7 @@
         }
         &-link{
             display: block;
-            font-family: 'Gilroy', 'Montserrat', sans-serif;
+            font-family: var(--second-font);
             @include font(400, 32px, 37px);
             letter-spacing: 0.05em;
             color: color('header-color');

@@ -9,6 +9,14 @@
 @font-face {
   font-family: Gilroy;
   font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
   src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -55,6 +63,14 @@
 }
 
 @font-face {
+  font-family: Jost;
+  font-display: swap;
+  src: url("../fonts/Jost-Regular.woff2") format("woff2"), url("../fonts/Jost-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: Montserrat;
   font-display: swap;
   src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
@@ -89,8 +105,8 @@
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -99,14 +115,6 @@
   font-display: swap;
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
-  font-weight: 300;
   font-style: normal;
 }
 
@@ -127,10 +135,18 @@
 }
 
 @font-face {
-  font-family: Gilroy;
+  font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff");
-  font-weight: 800;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tenor Sans";
+  font-display: swap;
+  src: url("../fonts/TenorSans-Regular.woff2") format("woff2"), url("../fonts/TenorSans-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -145,8 +161,8 @@
 @font-face {
   font-family: Gilroy;
   font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -632,7 +648,7 @@
 
 .header__menu-link {
   display: block;
-  font-family: "Gilroy", "Montserrat", sans-serif;
+  font-family: var(--second-font);
   font-weight: 400;
   font-size: 32px;
   line-height: 37px;
@@ -989,7 +1005,7 @@
 
 .amenities__pagination span {
   display: block;
-  font-family: "Gilroy";
+  font-family: var(--second-font);
   font-size: 21px;
   line-height: 25px;
   text-align: center;
@@ -1057,7 +1073,7 @@
 }
 
 .amenities__slide-title {
-  font-family: "Gilroy";
+  font-family: var(--second-font);
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -1071,7 +1087,7 @@
 .amenities__slide-tag {
   padding: 10px 15px;
   background: #E1A346;
-  font-family: "Gilroy";
+  font-family: var(--second-font);
   font-size: 21px;
   line-height: 25px;
   text-align: center;
@@ -1085,7 +1101,7 @@
 }
 
 .amenities__slide-p {
-  font-family: "Gilroy";
+  font-family: var(--second-font);
   font-size: 21px;
   line-height: 25px;
   color: #000000;
@@ -1147,15 +1163,157 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 70px;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  background: #000;
+}
+
+.callback__content-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 372px;
+  z-index: -1;
+}
+
+.callback__content-bg img {
+  width: 100%;
+}
+
+.callback__form {
+  max-width: 393px;
+}
+
+.callback__form-input {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.callback__form-input + .callback__form-input {
+  margin-top: 36px;
+}
+
+.callback__form-input input {
+  font-family: var(--third-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #FFFFFF;
+  background: none;
+  padding-bottom: 8px;
+  border: none;
+}
+
+.callback__form-input input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.callback__form-input input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.callback__form-input input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.callback__form-input input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.callback__form-input input::placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #FFFFFF;
 }
 
 .callback__title {
-  font-family: "Jost";
+  font-family: var(--third-font);
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
   line-height: 92px;
   text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+}
+
+.callback__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 96px;
+  height: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+}
+
+.callback__close:hover .callback__close-svg {
+  -webkit-transform: scale(0.9) rotate(-90deg);
+      -ms-transform: scale(0.9) rotate(-90deg);
+          transform: scale(0.9) rotate(-90deg);
+}
+
+.callback__close:hover .callback__close-rect {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.callback__close-rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 600ms ease-in-out;
+  -o-transition: 600ms ease-in-out;
+  transition: 600ms ease-in-out;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: #E1A346;
+}
+
+.callback__close-svg {
+  position: relative;
+  z-index: 2;
+  -webkit-transition: 600ms ease-in-out;
+  -o-transition: 600ms ease-in-out;
+  transition: 600ms ease-in-out;
+}
+
+.callback__p {
+  font-family: var(--third-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 32px;
+  margin-top: 36px;
+}
+
+.callback__p a {
   color: #FFFFFF;
 }
 
@@ -1184,13 +1342,19 @@
      object-fit: cover;
 }
 
+:root {
+  --first-font: "Montserrat", sans-serif;
+  --second-font: "Gilroy", "Montserrat", sans-serif;
+  --third-font: "Jost", "Montserrat", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--first-font);
 }
 
 *::-moz-selection {

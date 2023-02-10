@@ -1,8 +1,11 @@
 mixin callback()
     .callback#callback 
         .callback__content 
-            .callback__close 
+            .callback__content-bg 
+                img(src="@img/callback-bg.png", alt="" draggable="false") 
+            button(type="button").callback__close.callback-close 
                 .callback__close-rect 
+                .callback__close-svg 
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.721436" y="30.3643" width="42.1494" height="1.94819" transform="rotate(-45 0.721436 30.3643)" fill="black"/>
                         <rect x="1.47437" y="0.257812" width="42.1494" height="1.94819" transform="rotate(45 1.47437 0.257812)" fill="black"/>

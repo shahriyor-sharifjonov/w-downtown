@@ -1,10 +1,15 @@
 // Тема по умолчанию
+:root{
+    --first-font: 'Montserrat', sans-serif;
+    --second-font: 'Gilroy', 'Montserrat', sans-serif;
+    --third-font: 'Jost', 'Montserrat', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--first-font);
     // cursor: none;
     &::selection{
         background: #e1a346;

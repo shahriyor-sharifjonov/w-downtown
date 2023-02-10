@@ -5,6 +5,7 @@ import * as animations from "./modules/animations.js";
 import * as sliders from "./modules/sliders.js";
 import * as cursor from "./modules/cursor.js";
 import * as header from "./modules/header.js";
+import * as callback from "./modules/callback.js";
 
 functions.isWebp();
 cursor.init();
@@ -13,3 +14,4 @@ canvas.init();
 animations.init();
 sliders.init(); 
 header.init();
+callback.init();

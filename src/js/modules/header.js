@@ -17,11 +17,7 @@ export function init() {
 
     const ease1 = "ease.inOut";
     const ease2 = "circ.out";
-
-    // gsap.set('.header__menu', {
-
-    // })
-
+    
     const telChar = new SplitText(".tel-anim", { type: "words,chars" })
     const telChars = telChar.chars;
 

@@ -8,6 +8,13 @@
 @font-face {
 	font-family: Gilroy;
 	font-display: swap;
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Gilroy;
+	font-display: swap;
 	src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
@@ -48,6 +55,13 @@
 	font-style: normal;
 }
 @font-face {
+	font-family: Jost;
+	font-display: swap;
+	src: url("../fonts/Jost-Regular.woff2") format("woff2"), url("../fonts/Jost-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
 	font-family: Montserrat;
 	font-display: swap;
 	src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
@@ -78,8 +92,8 @@
 @font-face {
 	font-family: Montserrat;
 	font-display: swap;
-	src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
-	font-weight: 500;
+	src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
@@ -87,13 +101,6 @@
 	font-display: swap;
 	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
 	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: Montserrat;
-	font-display: swap;
-	src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
-	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
@@ -111,10 +118,17 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: Gilroy;
+	font-family: Montserrat;
 	font-display: swap;
-	src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff");
-	font-weight: 800;
+	src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Tenor Sans';
+	font-display: swap;
+	src: url("../fonts/TenorSans-Regular.woff2") format("woff2"), url("../fonts/TenorSans-Regular.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
@@ -127,7 +141,7 @@
 @font-face {
 	font-family: Gilroy;
 	font-display: swap;
-	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
-	font-weight: 700;
+	src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff");
+	font-weight: 800;
 	font-style: normal;
 }
