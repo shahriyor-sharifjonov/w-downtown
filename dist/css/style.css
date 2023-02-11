@@ -1107,7 +1107,6 @@
   color: #000000;
 }
 
-<<<<<<< HEAD
 .map {
   background-color: #fff;
   position: relative;
@@ -1160,68 +1159,12 @@
   padding-right: 60px;
   margin-right: auto;
   line-height: 0;
-=======
-.intro {
-  background: #fff;
-}
-
-.intro__body {
-  position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-}
-
-.intro__canvas {
-  width: 800px;
-}
-
-.intro__canvas .csc {
-  height: 100vh !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.intro__canvas canvas {
-  height: 600px !important;
-}
-
-.intro__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.intro__inner {
-  position: sticky;
-  top: 0;
->>>>>>> 7ea4bc53ee3240e09945b738946275cc4a97502f
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
 }
 
 .map__slide-wrapper {
@@ -1427,7 +1370,67 @@
 
 .map__slide-pag .swiper-pagination-bullet.swiper-pagination-bullet-active {
   border: 1px solid #fff;
-=======
+}
+
+.intro {
+  background: #fff;
+}
+
+.intro__body {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.intro__canvas {
+  width: 800px;
+}
+
+.intro__canvas .csc {
+  height: 100vh !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro__canvas canvas {
+  height: 600px !important;
+}
+
+.intro__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.intro__inner {
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1454,7 +1457,6 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   margin-bottom: 32px;
->>>>>>> 7ea4bc53ee3240e09945b738946275cc4a97502f
 }
 
 .transparent-button {
