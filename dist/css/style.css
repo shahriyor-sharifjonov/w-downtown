@@ -1142,9 +1142,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 5;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  margin-top: -13%;
 }
 
 .map__slide {
@@ -1457,6 +1455,95 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   margin-bottom: 32px;
+}
+
+.payment {
+  min-height: 100vh;
+  padding: 72px 0 100px;
+  position: relative;
+}
+
+.payment__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 104px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.payment__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.payment__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.payment__img::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 102, 114, 0.15)), to(#081012));
+  background: -o-linear-gradient(top, rgba(53, 102, 114, 0.15) 0%, #081012 100%);
+  background: linear-gradient(180deg, rgba(53, 102, 114, 0.15) 0%, #081012 100%);
+}
+
+.payment__inner {
+  position: relative;
+  z-index: 3;
+}
+
+.payment__cards {
+  margin-top: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.payment__card {
+  width: 24%;
+  padding: 44px 32px 56px;
+  background: #191D23;
+  height: auto;
+}
+
+.payment__card-title {
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 112px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.payment__card-text {
+  margin-top: 134px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 }
 
 .transparent-button {
