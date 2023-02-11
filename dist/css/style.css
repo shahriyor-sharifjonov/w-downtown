@@ -410,7 +410,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
-  background: #00000090;
+  background: #000000;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   z-index: 50;
@@ -648,7 +648,7 @@
 
 .header__menu-link {
   display: block;
-  font-family: var(--second-font);
+  font-family: var(--third-font);
   font-weight: 400;
   font-size: 32px;
   line-height: 37px;
@@ -1005,7 +1005,7 @@
 
 .amenities__pagination span {
   display: block;
-  font-family: var(--second-font);
+  font-family: var(--third-font);
   font-size: 21px;
   line-height: 25px;
   text-align: center;
@@ -1073,7 +1073,7 @@
 }
 
 .amenities__slide-title {
-  font-family: var(--second-font);
+  font-family: var(--third-font);
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -1087,7 +1087,7 @@
 .amenities__slide-tag {
   padding: 10px 15px;
   background: #E1A346;
-  font-family: var(--second-font);
+  font-family: var(--third-font);
   font-size: 21px;
   line-height: 25px;
   text-align: center;
@@ -1101,12 +1101,13 @@
 }
 
 .amenities__slide-p {
-  font-family: var(--second-font);
+  font-family: var(--third-font);
   font-size: 21px;
   line-height: 25px;
   color: #000000;
 }
 
+<<<<<<< HEAD
 .map {
   background-color: #fff;
   position: relative;
@@ -1159,12 +1160,68 @@
   padding-right: 60px;
   margin-right: auto;
   line-height: 0;
+=======
+.intro {
+  background: #fff;
+}
+
+.intro__body {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.intro__canvas {
+  width: 800px;
+}
+
+.intro__canvas .csc {
+  height: 100vh !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro__canvas canvas {
+  height: 600px !important;
+}
+
+.intro__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.intro__inner {
+  position: sticky;
+  top: 0;
+>>>>>>> 7ea4bc53ee3240e09945b738946275cc4a97502f
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+<<<<<<< HEAD
 }
 
 .map__slide-wrapper {
@@ -1370,6 +1427,34 @@
 
 .map__slide-pag .swiper-pagination-bullet.swiper-pagination-bullet-active {
   border: 1px solid #fff;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.intro__p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.intro__title {
+  font-weight: 400;
+  font-size: 112px;
+  line-height: 140px;
+  text-align: center;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+>>>>>>> 7ea4bc53ee3240e09945b738946275cc4a97502f
 }
 
 .transparent-button {
@@ -1387,7 +1472,6 @@
   font-size: 14px;
   line-height: 115%;
   color: #ffffff;
-  text-transform: uppercase;
   border-radius: 70px;
   padding: 18px 30px;
   gap: 10px;
@@ -1395,6 +1479,35 @@
 
 .transparent-button_orange {
   border: 1px solid #E1A346;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  color: #000;
+  background: #fff;
+  gap: 10px;
+  padding: 18px 30px;
+  border-radius: 80px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.button_black {
+  background: #000;
+  color: #fff;
 }
 
 .callback {
@@ -1462,6 +1575,7 @@
 .callback__form-input input {
   font-family: var(--third-font);
   font-weight: 400;
+  width: 100%;
   font-size: 24px;
   line-height: 35px;
   color: #FFFFFF;
@@ -1644,6 +1758,8 @@ body {
 
 body {
   background: #000;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
 }
 
 a {

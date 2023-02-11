@@ -19,7 +19,8 @@ export function init() {
             allowTouchMove: false,
             mousewheel: {
                 forceToAxis: false,
-                sensitivity: 5,
+                sensitivity: 0.5,
+                thresholdDelta: 30,
                 releaseOnEdges: true,
             },
             watchSlidesProgress: true,

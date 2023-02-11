@@ -19,8 +19,6 @@ export function init() {
             ease: ease1,
         }, 'start')
         .from('.callback__video video', {
-            // xPercent: -100,
-            // objectPosition: "20%",
             delay: 0.1,
             ease: ease1
         }, 'start')

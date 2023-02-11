@@ -8,6 +8,9 @@ export function init() {
     gsap.set(".about__canvas", {
         x: 100,
     })
+    gsap.set(".intro__content", {
+        height: document.querySelector('.intro__canvas').clientHeight
+    }) 
     gsap.utils.toArray(".about").forEach(el => {
         const tl = gsap.timeline({
             scrollTrigger: {
