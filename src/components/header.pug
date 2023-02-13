@@ -3,23 +3,29 @@ mixin header()
         nav.header__nav 
             .header__inner.container 
                 .header__left 
-                    button(type="button").header__button.hover 
+                    button(type="button").header__button.hover.btn-anim  
                         .header__button-rect 
                             .header__button-line.header__button-line_top 
                             .header__button-line.header__button-line_bot 
-                        span.header__button-p menu  
-                    a(href="#brochure").header__link.transparent-button.hover BROCHURE  
+                        span.header__button-p
+                            .btn-anim__scroll 
+                                span.btn-anim__p menu  
+                                span.btn-anim__p menu  
+                    a(href="#brochure").header__link.transparent-button.hover.btn-anim 
+                            .btn-anim__scroll 
+                                span.btn-anim__p BROCHURE 
+                                span.btn-anim__p BROCHURE 
                 .header__right 
-                    a(href="tel:+998977777777").header__tel.hover.tel-animation 
-                        .header__tel-scroll 
-                            span.header__tel-p.tel-anim show number 
-                            span.header__tel-p.tel-anim +998 97 777 77 77
-                    button(type="button").header__tel.hover.call-animation.callback-open
+                    a(href="tel:+998977777777").header__tel.hover.btn-anim
+                        .header__tel-scroll.btn-anim__scroll  
+                            span.header__tel-p.btn-anim__p show number 
+                            span.header__tel-p.btn-anim__p +998 97 777 77 77
+                    button(type="button").header__tel.hover.callback-open.btn-anim
                         .header__tel-el 
                             div 
-                        .header__tel-scroll 
-                            span.header__tel-p.call-anim ORDER A CALLBACK
-                            span.header__tel-p.call-anim ORDER A CALLBACK
+                        .header__tel-scroll.btn-anim__scroll  
+                            span.header__tel-p.btn-anim__p ORDER A CALLBACK
+                            span.header__tel-p.btn-anim__p ORDER A CALLBACK
         .header__menu 
             .header__menu-rect 
             .header__menu-left 

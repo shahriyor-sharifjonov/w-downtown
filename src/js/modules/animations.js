@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin.js";
 
@@ -11,6 +12,25 @@ export function init() {
     gsap.set(".intro__content", {
         height: document.querySelector('.intro__canvas').clientHeight
     }) 
+    const char = new SplitText(".btn-anim__p", { type: "words,chars" })
+    gsap.utils.toArray(".btn-anim").forEach(el => {
+        let t = el;
+        const anim = gsap.to(el.querySelectorAll(".btn-anim__p div div"), {
+            yPercent: -100,
+            duration: 0.6,
+            stagger: 0.015,
+            ease: "power4",
+        })
+        anim.pause()
+        el.addEventListener('mouseenter', () => {   
+            t = el;
+            anim.play()
+        })
+        el.addEventListener('mouseleave', () => {
+            t = el;
+            anim.reverse()
+        })
+    })
     gsap.utils.toArray(".about").forEach(el => {
         const tl = gsap.timeline({
             scrollTrigger: {

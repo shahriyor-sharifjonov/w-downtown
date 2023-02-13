@@ -18,29 +18,29 @@ export function init() {
     const ease1 = "ease.inOut";
     const ease2 = "circ.out";
     
-    const telChar = new SplitText(".tel-anim", { type: "words,chars" })
-    const telChars = telChar.chars;
+    // const telChar = new SplitText(".tel-anim", { type: "words,chars" })
+    // const telChars = telChar.chars;
 
-    telAnimation.add('start')
-        .to(telChars, {
-            yPercent: -100,
-            duration: 0.6,
-            stagger: 0.015,
-            ease: "power4",
-        })
-    telAnimation.pause();
+    // telAnimation.add('start')
+    //     .to(telChars, {
+    //         yPercent: -100,
+    //         duration: 0.6,
+    //         stagger: 0.015,
+    //         ease: "power4",
+    //     })
+    // telAnimation.pause();
 
-    const callChar = new SplitText(".call-anim", { type: "words,chars" })
-    const callChars = callChar.chars;
+    // const callChar = new SplitText(".call-anim", { type: "words,chars" })
+    // const callChars = callChar.chars;
 
-    callAnimation.add('start')
-        .to(callChars, {
-            yPercent: -100,
-            duration: 0.6,
-            stagger: 0.015,
-            ease: "power4",
-        })
-    callAnimation.pause();
+    // callAnimation.add('start')
+    //     .to(callChars, {
+    //         yPercent: -100,
+    //         duration: 0.6,
+    //         stagger: 0.015,
+    //         ease: "power4",
+    //     })
+    // callAnimation.pause();
 
     menuAnimation.add('start')
         .to('.header__button-p', {
@@ -144,19 +144,19 @@ export function init() {
         toggleMenu()
     })
 
-    headerTel.addEventListener('mouseenter', () => {
-        telAnimation.play()
-    })
+    // headerTel.addEventListener('mouseenter', () => {
+    //     telAnimation.play()
+    // })
 
-    headerTel.addEventListener('mouseleave', () => {
-        telAnimation.reverse()
-    })
+    // headerTel.addEventListener('mouseleave', () => {
+    //     telAnimation.reverse()
+    // })
 
-    headerCall.addEventListener('mouseenter', () => {
-        callAnimation.play()
-    })
+    // headerCall.addEventListener('mouseenter', () => {
+    //     callAnimation.play()
+    // })
 
-    headerCall.addEventListener('mouseleave', () => {
-        callAnimation.reverse()
-    })
+    // headerCall.addEventListener('mouseleave', () => {
+    //     callAnimation.reverse()
+    // })
 }

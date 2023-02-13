@@ -47,20 +47,6 @@
     &__tel{
         @include flex(center, flex-end);
         gap: 16px;
-        // &:hover{
-        //     .header__tel-p{
-        //         transform: translateY(-100%);
-        //         &+.header__tel-p{
-        //             transform: translateY(calc(100% - 50px));
-        //         }
-        //     }
-        // }
-        &-scroll{ 
-            display: flex;
-            flex-direction: column;
-            height: 20px;
-            overflow: hidden;
-        }
         &-el{
             @include rect(28px);
             @include border(color('header-color'));
@@ -78,12 +64,6 @@
             @include font(400, 16px, 20px);
             color: color('header-color');
             text-transform: uppercase;
-            will-change: transform;
-            transition: transform 300ms ease;
-            height: 30px;
-            *{
-                will-change: transform;
-            }
         }
     }
     &__menu{

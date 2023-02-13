@@ -21,6 +21,11 @@ export function init() {
             //     frameCount: 76, 
             //     scrollArea: window.innerHeight * 2
             // })
+            // new CanvasScrollClip(document.querySelector('.intro__canvas'), {
+            //     framePath: "files/out-0001.png",
+            //     frameCount: 179,
+            //     scrollArea: window.innerHeight * 2
+            // })
         }
         if(document.querySelector('.about__canvas')){
             new CanvasScrollClip(document.querySelector('.about__canvas'), {

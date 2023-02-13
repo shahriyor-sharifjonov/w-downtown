@@ -532,18 +532,6 @@
   gap: 16px;
 }
 
-.header__tel-scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 20px;
-  overflow: hidden;
-}
-
 .header__tel-el {
   width: 28px;
   height: 28px;
@@ -576,17 +564,6 @@
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-  will-change: transform;
-  -webkit-transition: -webkit-transform 300ms ease;
-  transition: -webkit-transform 300ms ease;
-  -o-transition: transform 300ms ease;
-  transition: transform 300ms ease;
-  transition: transform 300ms ease, -webkit-transform 300ms ease;
-  height: 30px;
-}
-
-.header__tel-p * {
-  will-change: transform;
 }
 
 .header__menu {
@@ -1242,9 +1219,63 @@
   text-align: center;
 }
 
+.button svg {
+  stroke: #000;
+}
+
 .button_black {
   background: #000;
   color: #fff;
+}
+
+.button_black svg {
+  stroke: #fff;
+}
+
+.btn-anim__scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 20px;
+  overflow: hidden;
+}
+
+.btn-anim__p {
+  will-change: transform;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  -o-transition: transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  min-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4px;
+}
+
+.btn-anim__p * {
+  min-height: 20px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  will-change: transform;
 }
 
 .callback {
