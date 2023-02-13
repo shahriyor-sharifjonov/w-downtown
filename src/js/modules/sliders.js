@@ -1,4 +1,4 @@
-import Swiper, { EffectCreative, Mousewheel } from 'swiper'
+import Swiper, { EffectCreative, Mousewheel, Navigation, Pagination, EffectFade } from 'swiper'
 import gsap from 'gsap';
 
 function isScrolledIntoView(el) {
@@ -10,7 +10,7 @@ function isScrolledIntoView(el) {
 }
 
 export function init() {
-    if(document.querySelector('.amenities__swiper')){
+    if (document.querySelector('.amenities__swiper')) {
         const duration = 600;
         const durationS = duration / 1000;
         const amenitiesSwiper = new Swiper('.amenities__swiper', {
@@ -27,23 +27,23 @@ export function init() {
             speed: duration,
         });
         document.addEventListener('scroll', () => {
-            if(isScrolledIntoView(document.querySelector('.amenities__swiper'))){
+            if (isScrolledIntoView(document.querySelector('.amenities__swiper'))) {
                 amenitiesSwiper.mousewheel.enable();
-            }else{
+            } else {
                 amenitiesSwiper.mousewheel.disable();
             }
         })
-        amenitiesSwiper.on('slideChange', function(swiper) {
-            console.log(swiper.activeIndex+1);
+        amenitiesSwiper.on('slideChange', function (swiper) {
+            console.log(swiper.activeIndex + 1);
             const activeTxt = document.querySelector('#activeSlide');
-            activeTxt.innerHTML = `0${swiper.activeIndex+1}`
+            activeTxt.innerHTML = `0${swiper.activeIndex + 1}`
             const galleries = document.querySelectorAll('.amenities__gallery-slide');
             const active = swiper.slides[swiper.activeIndex];
             const target = active.getAttribute('data-gallery');
             const element = document.querySelector(target);
             galleries.forEach(el => {
                 el.classList.remove('prev');
-                if(el.classList.contains('active')){
+                if (el.classList.contains('active')) {
                     el.classList.add('prev')
                     el.classList.remove('active');
                     gsap.to(el, {
@@ -85,5 +85,26 @@ export function init() {
                 duration: 0,
             })
         })
+    }
+
+    if (document.querySelector('#map-swiper')) {
+        const mapSwiper = new Swiper('#map-swiper', {
+            modules: [Navigation, Pagination, EffectFade],
+            slidesPerView: 1,
+            allowTouchMove: false,
+            navigation: {
+                nextEl: '.map__slide-next',
+                prevEl: '.map__slide-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+            effect: 'fade',
+            fadeEffect: {
+              crossFade: true
+            },
+        });
     }
 } 
